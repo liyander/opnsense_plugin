@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model>
+    <mount>//OPNsense/appblocker</mount>
+    <version>1.0.0</version>
+    <description>
+        AppBlocker Plugin settings
+    </description>
+    <items>
+        <general>
+            <enabled type="BooleanField">
+                <default>0</default>
+                <Required>Y</Required>
+            </enabled>
+            <blocked_domains type="TextField">
+                <Required>N</Required>
+                <mask>/^([a-zA-Z0-9.,\s-]*)$/</mask>
+            </blocked_domains>
+             <block_dns_bypass type="BooleanField">
+                <default>0</default>
+                <Required>Y</Required>
+            </block_dns_bypass>
+             <social_media type="OptionField">
+                <Required>N</Required>
+                <default></default>
+                <Multiple>Y</Multiple>
+                <OptionValues>
+                    <facebook>Facebook</facebook>
+                    <twitter>Twitter</twitter>
+                    <instagram>Instagram</instagram>
+                    <tiktok>TikTok</tiktok>
+                    <youtube>YouTube</youtube>
+                    <whatsapp>WhatsApp</whatsapp>
+                    <telegram>Telegram</telegram>
+                    <discord>Discord</discord>
+                    <reddit>Reddit</reddit>
+                    <netflix>Netflix</netflix>
+                    <twitch>Twitch</twitch>
+                    <pinterest>Pinterest</pinterest>
+                    <snapchat>Snapchat</snapchat>
+                    <spotify>Spotify</spotify>
+                </OptionValues>
+            </social_media>
+            <games type="OptionField">
+                <Required>N</Required>
+                <default></default>
+                <Multiple>Y</Multiple>
+                <OptionValues>
+                    <roblox>Roblox</roblox>
+                    <steam>Steam</steam>
+                    <epicgames>Epic Games</epicgames>
+                    <ea>EA / Origin</ea>
+                    <minecraft>Minecraft</minecraft>
+                    <riot>Riot Games (LoL/Valorant)</riot>
+                    <blizzard>Battle.net / Blizzard</blizzard>
+                    <playstation>PlayStation Network</playstation>
+                    <xbox>Xbox Live</xbox>
+                    <nintendo>Nintendo</nintendo>
+                    <coc>Clash of Clans / Supercell</coc>
+                    <freefire>Garena Free Fire</freefire>
+                    <pubg>PUBG Mobile / Tencent</pubg>
+                    <cod>Call of Duty Mobile</cod>
+                    <genshin>Genshin Impact / HoYoverse</genshin>
+                    <mobilelegends>Mobile Legends</mobilelegends>
+                </OptionValues>
+            </games>
+        </general>
+    </items>
+</model>

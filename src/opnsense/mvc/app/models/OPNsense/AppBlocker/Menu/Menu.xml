@@ -1,0 +1,8 @@
+
+<menu>
+    <Services>
+        <AppBlocker VisibleName="App Blocker" cssClass="fa fa-ban">
+            <Settings ConfigName="Settings" url="/ui/appblocker/index/index"/>
+        </AppBlocker>
+    </Services>
+</menu>
