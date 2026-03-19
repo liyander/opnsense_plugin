@@ -54,6 +54,10 @@ Block major gaming ecosystems:
 * Genshin Impact / HoYoverse
 * Mobile Legends
 
+### 🌟 Strict Whitelist Mode
+
+Want maximum control? Enable **Whitelist Mode** to block **all** DNS resolution across the network, except for specifically approved domains and apps. Ideal for highly restricted environments, testing labs, or extreme parental controls.
+
 ### ⚡ Lightweight Design
 
 * Uses native Unbound DNS service

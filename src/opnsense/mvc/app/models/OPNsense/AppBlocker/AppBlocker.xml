@@ -64,5 +64,46 @@
                 </OptionValues>
             </games>
         </general>
+        <whitelistmode>
+            <enabled type="BooleanField">
+                <default>0</default>
+                <Required>Y</Required>
+            </enabled>
+            <allowed_domains type="TextField">
+                <Required>N</Required>
+                <mask>/^([a-zA-Z0-9.,\s-]*)$/</mask>
+            </allowed_domains>
+            <allowed_apps type="OptionField">
+                <Required>N</Required>
+                <default></default>
+                <Multiple>Y</Multiple>
+                <OptionValues>
+                    <facebook>Facebook</facebook>
+                    <twitter>Twitter</twitter>
+                    <instagram>Instagram</instagram>
+                    <tiktok>TikTok</tiktok>
+                    <youtube>YouTube</youtube>
+                    <whatsapp>WhatsApp</whatsapp>
+                    <telegram>Telegram</telegram>
+                    <discord>Discord</discord>
+                    <reddit>Reddit</reddit>
+                    <netflix>Netflix</netflix>
+                    <twitch>Twitch</twitch>
+                    <pinterest>Pinterest</pinterest>
+                    <snapchat>Snapchat</snapchat>
+                    <spotify>Spotify</spotify>
+                    <roblox>Roblox</roblox>
+                    <steam>Steam</steam>
+                    <epicgames>Epic Games</epicgames>
+                    <ea>EA / Origin</ea>
+                    <minecraft>Minecraft</minecraft>
+                    <riot>Riot Games</riot>
+                    <blizzard>Battle.net / Blizzard</blizzard>
+                    <playstation>PlayStation</playstation>
+                    <xbox>Xbox Live</xbox>
+                    <nintendo>Nintendo</nintendo>
+                </OptionValues>
+            </allowed_apps>
+        </whitelistmode>
     </items>
 </model>

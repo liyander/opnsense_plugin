@@ -2,7 +2,8 @@
 <menu>
     <Services>
         <AppBlocker VisibleName="App Blocker" cssClass="fa fa-ban">
-            <Settings ConfigName="Settings" url="/ui/appblocker/index/index"/>
+            <Settings VisibleName="Settings" url="/ui/appblocker/index/index"/>
+            <Whitelist VisibleName="Strict Whitelist" url="/ui/appblocker/index/whitelist"/>
         </AppBlocker>
     </Services>
 </menu>
